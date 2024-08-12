@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Get tags from Tumblr account">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Get Tumblr tags</title>
+        <style>
+            body {
+                font: 0.85rem monospace;
+            }
+            .tags {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="tags"></ul>
+        <script type="module">
+            // You will need to populate this file
+            // check env.example.js for key value pairs
+            import { env } from './env.js';
+            // set this if you don't want to use the default tumblr blog read from the env.js file. 
+            var apiKey = 'madox-test.tumblr.com';
+            env.apiBlog = apiKey;
+        </script>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
